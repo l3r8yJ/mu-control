@@ -63,13 +63,15 @@ public class IncomingDocumentsEntity {
             return false;
         }
         final IncomingDocumentsEntity that = (IncomingDocumentsEntity) obj;
-        return this.id == that.id && Objects.equals(this.documentNumber, that.documentNumber)
-                   && Objects.equals(this.documentDate, that.documentDate)
-                   && Objects.equals(this.sender, that.sender) && Objects.equals(
-            this.recipient, that.recipient) && Objects.equals(this.title, that.title)
-                   && Objects.equals(this.description, that.description)
-                   && Arrays.equals(this.esSignature, that.esSignature)
-                   && Objects.equals(this.processingStatus, that.processingStatus);
+        return this.id == that.id
+            && Objects.equals(this.documentNumber, that.documentNumber)
+            && Objects.equals(this.documentDate, that.documentDate)
+            && Objects.equals(this.sender, that.sender)
+            && Objects.equals(this.recipient, that.recipient)
+            && Objects.equals(this.title, that.title)
+            && Objects.equals(this.description, that.description)
+            && Arrays.equals(this.esSignature, that.esSignature)
+            && Objects.equals(this.processingStatus, that.processingStatus);
     }
 
     @Override

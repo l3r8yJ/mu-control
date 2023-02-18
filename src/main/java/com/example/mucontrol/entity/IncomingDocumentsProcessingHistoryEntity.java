@@ -31,17 +31,19 @@ public class IncomingDocumentsProcessingHistoryEntity {
     private Timestamp statusDate;
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
+    public boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if (o == null || getClass() != o.getClass()) {
+        if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        IncomingDocumentsProcessingHistoryEntity that = (IncomingDocumentsProcessingHistoryEntity) o;
-        return this.id == that.id && this.incomingDocumentId == that.incomingDocumentId
-                   && Objects.equals(this.status, that.status) && Objects.equals(
-            this.statusDate, that.statusDate);
+        IncomingDocumentsProcessingHistoryEntity that =
+            (IncomingDocumentsProcessingHistoryEntity) obj;
+        return this.id == that.id
+            && this.incomingDocumentId == that.incomingDocumentId
+            && Objects.equals(this.status, that.status)
+            && Objects.equals(this.statusDate, that.statusDate);
     }
 
     @Override

@@ -43,13 +43,18 @@ public class InterdepartmentalRequestsProcessingHistoryEntity {
         }
         InterdepartmentalRequestsProcessingHistoryEntity that = (InterdepartmentalRequestsProcessingHistoryEntity) o;
         return this.id == that.id
-                   && this.interdepartmentalRequestId == that.interdepartmentalRequestId
-                   && Objects.equals(this.status, that.status)
-                   && Objects.equals(this.statusDate, that.statusDate);
+            && this.interdepartmentalRequestId == that.interdepartmentalRequestId
+            && Objects.equals(this.status, that.status)
+            && Objects.equals(this.statusDate, that.statusDate);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(this.id, this.interdepartmentalRequestId, this.status, this.statusDate);
+        return Objects.hash(
+            this.id,
+            this.interdepartmentalRequestId,
+            this.status,
+            this.statusDate
+        );
     }
 }

@@ -54,10 +54,13 @@ public class InterdepartmentalRequestsEntity {
             return false;
         }
         InterdepartmentalRequestsEntity that = (InterdepartmentalRequestsEntity) o;
-        return this.id == that.id && this.muId == that.muId && Objects.equals(this.requestType,
-            that.requestType) && Objects.equals(this.name, that.name) && Objects.equals(
-            this.createdAt, that.createdAt) && Objects.equals(this.responsiblePerson,
-            that.responsiblePerson) && Objects.equals(this.status, that.status);
+        return this.id == that.id
+            && this.muId == that.muId
+            && Objects.equals(this.requestType, that.requestType)
+            && Objects.equals(this.name, that.name)
+            && Objects.equals(this.createdAt, that.createdAt)
+            && Objects.equals(this.responsiblePerson, that.responsiblePerson)
+            && Objects.equals(this.status, that.status);
     }
 
     @Override
