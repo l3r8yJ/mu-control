@@ -7,7 +7,7 @@
     <version>3.0.2</version>
     <relativePath/>
   </parent>
-  <groupId>com.example</groupId>
+  <groupId>com.l3r8y</groupId>
   <artifactId>mu-control</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>mu-control</name>
@@ -41,18 +41,14 @@
       <artifactId>spring-boot-starter-web-services</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.liquibase</groupId>
-      <artifactId>liquibase-core</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <scope>runtime</scope>
       <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.liquibase</groupId>
+      <artifactId>liquibase-core</artifactId>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>

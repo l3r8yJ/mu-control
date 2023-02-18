@@ -1,4 +1,4 @@
-package com.example.mucontrol;
+package com.l3r8y.mucontrol;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

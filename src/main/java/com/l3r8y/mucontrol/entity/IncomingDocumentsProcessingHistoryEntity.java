@@ -1,4 +1,4 @@
-package com.example.mucontrol.entity;
+package com.l3r8y.mucontrol.entity;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Column;
